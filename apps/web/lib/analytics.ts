@@ -1,8 +1,10 @@
 "use client";
 
-import { initDataFast, type DataFastWeb } from "datafast";
+import { initDataFast } from "datafast";
 
-let client: Promise<DataFastWeb | null> | null = null;
+type DataFastClient = Awaited<ReturnType<typeof initDataFast>>;
+
+let client: Promise<DataFastClient | null> | null = null;
 
 export function getAnalytics() {
   if (client) return client;
