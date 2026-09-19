@@ -1,0 +1,24 @@
+{
+  "name": "@start/ui",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./globals.css": "./src/styles/globals.css",
+    "./components/*": "./src/components/*.tsx",
+    "./lib/*": "./src/lib/*.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@hugeicons/core-free-icons": "latest",
+    "@hugeicons/react": "latest",
+    "class-variance-authority": "latest",
+    "cn": "latest",
+    "react": "^19.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "latest",
+    "typescript": "latest"
+  }
+}

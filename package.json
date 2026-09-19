@@ -1,0 +1,22 @@
+{
+  "name": "start",
+  "private": true,
+  "packageManager": "pnpm@11.1.1",
+  "scripts": {
+    "dev": "turbo dev",
+    "dev:web": "pnpm --filter @start/web dev",
+    "dev:api": "pnpm --filter @start/api dev",
+    "dev:mobile": "pnpm --filter @start/mobile start",
+    "build": "turbo build",
+    "typecheck": "turbo typecheck",
+    "test": "turbo test",
+    "test:web": "pnpm --filter @start/web test:e2e",
+    "deploy:web": "pnpm --filter @start/web deploy",
+    "deploy:api": "pnpm --filter @start/api deploy"
+  },
+  "devDependencies": {
+    "prettier": "latest",
+    "turbo": "latest",
+    "typescript": "latest"
+  }
+}

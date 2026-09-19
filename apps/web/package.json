@@ -1,0 +1,39 @@
+{
+  "name": "@start/web",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vinext dev --port 3000",
+    "build": "vinext build",
+    "start": "wrangler dev --config dist/server/wrangler.json",
+    "deploy": "vinext-cloudflare deploy --config dist/server/wrangler.json",
+    "typecheck": "tsc --noEmit",
+    "test": "playwright test",
+    "test:e2e": "playwright test"
+  },
+  "dependencies": {
+    "@cloudflare/vite-plugin": "latest",
+    "@hugeicons/core-free-icons": "latest",
+    "@hugeicons/react": "latest",
+    "@start/ui": "workspace:*",
+    "@vinext/cloudflare": "latest",
+    "better-auth": "latest",
+    "crisp-sdk-web": "^1.2.1",
+    "datafast": "^3.0.18",
+    "next": "latest",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "vinext": "latest"
+  },
+  "devDependencies": {
+    "@playwright/test": "latest",
+    "@tailwindcss/vite": "latest",
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "tailwindcss": "latest",
+    "typescript": "latest",
+    "vite": "^8.0.0",
+    "wrangler": "latest"
+  }
+}
