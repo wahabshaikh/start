@@ -1,0 +1,6 @@
+appId: com.wahabshaikh.start
+---
+- launchApp
+- assertVisible: "Ship web and iOS products from one starter."
+- tapOn:
+    id: "start-building"

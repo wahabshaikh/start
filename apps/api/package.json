@@ -1,0 +1,24 @@
+{
+  "name": "@start/api",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev --port 8787",
+    "deploy": "wrangler deploy",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "db:migrate": "wrangler d1 migrations apply start-db --local"
+  },
+  "dependencies": {
+    "@better-auth/expo": "latest",
+    "better-auth": "latest",
+    "hono": "latest"
+  },
+  "devDependencies": {
+    "@cloudflare/vitest-pool-workers": "latest",
+    "@cloudflare/workers-types": "latest",
+    "typescript": "latest",
+    "vitest": "latest",
+    "wrangler": "latest"
+  }
+}

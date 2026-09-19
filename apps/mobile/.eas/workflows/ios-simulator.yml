@@ -1,0 +1,21 @@
+name: iOS Simulator Test
+
+on:
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  build_ios_simulator:
+    name: Build iOS simulator app
+    type: build
+    params:
+      platform: ios
+      profile: development-simulator
+
+  maestro_test:
+    name: Run Maestro smoke tests
+    after: [build_ios_simulator]
+    type: maestro
+    params:
+      build_id: ${{ after.build_ios_simulator.outputs.build_id }}
+      flows: ./.maestro
