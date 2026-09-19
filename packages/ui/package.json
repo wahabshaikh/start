@@ -14,8 +14,9 @@
     "@hugeicons/core-free-icons": "latest",
     "@hugeicons/react": "latest",
     "class-variance-authority": "latest",
-    "cn": "latest",
-    "react": "^19.2.0"
+    "clsx": "latest",
+    "react": "^19.2.0",
+    "tailwind-merge": "latest"
   },
   "devDependencies": {
     "@types/react": "latest",
