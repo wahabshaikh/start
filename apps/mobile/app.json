@@ -24,7 +24,7 @@
             "deploymentTarget": "15.1"
           },
           "android": {
-            "minSdkVersion": 21
+            "minSdkVersion": 24
           }
         }
       ]
